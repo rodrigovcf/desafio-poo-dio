@@ -8,11 +8,11 @@
 <br>
 <p>
 <strong>	1.</strong> Nesse projeto é abstraído o DOMÍNIO Carona Solidária e modelados os seus ATRIBUTOS E MÉTODOS <br>
-<strong>	2.</strong> Criaremos as CLASSES: CaronaSolidaria, Solicitante, Ofertante e Destino <br>
+<strong>	2.</strong> CLASSES: CaronaSolidaria, Solicitante, Ofertante e Destino <br>
 <strong>	3.</strong> Essas classes se relacionam entre elas<br> 
 <strong>	4.</strong> São aplicadas as seguintes técnicas do PARADIGMA DE ORIENTAÇÃO A OBJETOS (POO): ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO <br>
 <strong>	5.</strong> Na representação das CLASSES que foram criadas e relacionadas, teremos os seus respectivos OBJETOS<br>
 </p>
 
 ----
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </p>      
+                                                                                                                                                                                                                                                                     
