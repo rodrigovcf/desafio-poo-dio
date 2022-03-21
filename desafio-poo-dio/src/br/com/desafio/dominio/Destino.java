@@ -1,23 +1,30 @@
 package br.com.desafio.dominio;
 
-public class Destino {
+public class Destino extends Carona{
 	
-	String cidade;
-	int distancia;
+	private int distancia;
 	
 	public Destino() {}
 	
-	public String getCidade() {
-		return cidade;
-	}
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
-	}
 	public int getDistancia() {
 		return distancia;
 	}
 	public void setDistancia(int distancia) {
 		this.distancia = distancia;
 	}
+
+	public double calcular_xp() {
+		
+		return xp_padrao * distancia;
+	}
+
+	public String toString() {
+		return "Destino {" + 
+				"Cidade de Destino= '" + getCidade() + '\'' +
+			    ", Distancia em km= '" + getDistancia() + '\'' + 
+			    '}'; 
+	}
+	
+	
 	
 }
