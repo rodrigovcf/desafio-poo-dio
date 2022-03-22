@@ -1,6 +1,7 @@
 package br.com.desafio.dominio;
 
 import java.util.LinkedHashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class Solicitante {
@@ -9,13 +10,30 @@ public class Solicitante {
 	private Set<Carona> caronasSolicitadas = new LinkedHashSet<>();
 	private Set<Carona> caronasConcluidas = new LinkedHashSet<>();
 	
-	public void solicitarCarona(Oferta oferta) {}
-	public void progredir() {}
+	public void solicitarCarona(Oferta oferta) {
+		this.caronasSolicitadas.addAll(oferta.getCaronas());
+		oferta.getSolicitacoes().add(this);
+	}
+	
+	public void progredir() {
+		Optional<Carona> carona = this.caronasSolicitadas.stream().findFirst();
+		if(carona.isPresent()) {
+			this.caronasConcluidas.add(carona.get());
+			this.caronasSolicitadas.remove(carona.get());
+		}else {
+			System.err.println("Você não está associado em nenhuma carona!");
+		}
+	}
 	
 	/*
 	 * Quando concluir solicitacao
 	 */
-	public void calcularXp() {}
+	public double calcularXp() {
+		return this.caronasConcluidas
+				.stream()
+				.mapToDouble(carona -> carona.calcular_xp())
+				.sum();
+	}
 	
 	public String getNome() {
 		return nome;
