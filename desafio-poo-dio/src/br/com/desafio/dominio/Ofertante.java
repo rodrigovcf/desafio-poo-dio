@@ -22,8 +22,8 @@ public class Ofertante extends Carona{
 
 	public String toString() {
 		return "Ofertante {" + 
-					"Nome do Ofertante= '" + getNome() + '\'' +
-				    ", Cidade de Origem= '"+ getCidade() + '\'' + 
+					"Nome do Ofertante= '" + getNome() + '\'' +	
+					"Cidade de Origem= '" + getCidade() + '\'' +	
 				    ", Data da Oferta= " + dataOferta +
 				    '}'; 
 	}

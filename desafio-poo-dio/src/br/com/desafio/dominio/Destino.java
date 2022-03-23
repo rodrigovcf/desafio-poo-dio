@@ -13,6 +13,9 @@ public class Destino extends Carona{
 		this.distancia = distancia;
 	}
 
+	/*
+	 * XP calculado com base na distancia percorrida
+	 */
 	public double calcular_xp() {
 		
 		return xp_padrao * distancia;
@@ -20,7 +23,7 @@ public class Destino extends Carona{
 
 	public String toString() {
 		return "Destino {" + 
-				"Cidade de Destino= '" + getCidade() + '\'' +
+				"Cidade de Destino= '" + getCidade() + '\'' +				
 			    ", Distancia em km= '" + getDistancia() + '\'' + 
 			    '}'; 
 	}

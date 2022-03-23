@@ -16,7 +16,7 @@ public abstract class Carona {
 	public String getCidade() {
 		return cidade;
 	}
-	public void getCidade(String cidadeOrig) {
+	public void setCidade(String cidadeOrig) {
 		this.cidade = cidadeOrig;
 	}
 	
